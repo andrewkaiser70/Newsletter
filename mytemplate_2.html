@@ -10,22 +10,37 @@
 			background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/blackhole.png); 
 			background-repeat: no-repeat;
   			background-size: cover;
+  			background-position: center;
 		}
-		div{
+		iframe{
+		  max-width: 100%;
+		  height: auto;
+		}
+		p{
+			color:cyan; 
+			width: 50%; 
+			height: 100px;
+		}
+		.column{
+			max-width: 600px
+			margin: 0px;
+			border: 10px
 			column-count: 2;
-			column-gap: 50px;
-			column-width: 500px;
-			white-space: nowrap;
+			-webkit-column-gap: 10px;
+     		-moz-column-gap: 10px;
+          	column-gap: 10px;
+			white-space: wrap;
   			overflow: hidden;
-
-
 		}
-		/* Create three unequal columns that floats next to each other */
-		.column {
-		  float: left;
-		  width: 50%;
-		  padding: 15px;
+		.column.left {
+			float: left;
+			width: 50%;
 		}
+		.column.right {
+			float: right;
+			width: 50%;
+		}
+
 		 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 		@media screen and (max-width: 600px) {
 		  .column {
@@ -44,7 +59,6 @@
 				  display: block;
 				  margin-left: auto;
 				  margin-right: auto;
-				  width: 50%;
 				  text-align: center;
 				}
 		.image{
@@ -56,17 +70,16 @@
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Things I Saw On The Internet This Week</title>
+
   </head>
   <body>
 
-  	<a 
-    href="https://www.satanmusic.com/">
+  	<a href="https://www.satanmusic.com/">
     	<img
     	class="image center"
+    	style="width: 10%; height: auto;"
     	src="https://scontent.fagc1-1.fna.fbcdn.net/v/t1.0-9/22539909_10204153765361501_1722574992896795370_n.jpg?_nc_cat=110&_nc_ht=scontent.fagc1-1.fna&oh=aa17029011f7a12bb83f418f4caa525f&oe=5D2D31C6"
-    	alt="Kaiser"
-		width="50" 
-		height="100">
+    	alt="Kaiser">
 	</a>
 
     <h1 style="color:red;text-align:center;">
@@ -74,10 +87,7 @@
 	</h1>
 
 	<p
-	class="center"
-	style="color:cyan;"
-	width="300"
-	height="300">
+	class="center">
 		Often I find myself wandering around the internet and think, "Someone else should see this!" I started this project of sharing culture across the web so that I could share said culture with all of you, and perhaps some of it will rub off. 
 	</p>
 
@@ -94,32 +104,71 @@
 	</iframe>
 
 	<div class="row center">
-		<div class="column">
+		<div class="column left">
 			<h3
 	    	style="color:white">
 	    	Best Musical Thing:
 	    	</h3>
+
+	    	<iframe
+	    	style="width: 560px; height: 315px; border: 0" 
+	    	src="https://www.youtube.com/embed/_W0zqm5zMdc"
+	    	allowfullscreen>
+	    	</iframe>
+
+	    	<p class="center">
+	    	I have been listening to Lizzo for awhile now, and she is superb. This is just a little parody of Anchorman that I got from the Pitchfork article on 
+	    	<a href="https://pitchfork.com/thepitch/lizzos-10-best-flute-videos/"> 
+	    	her top 10 flute videos </a>.
+	    	If you have not listened to her before, I definitely recommend listening to 
+	    	<a href="https://open.spotify.com/track/0k664IuFwVP557Gnx7RhIl?si=oeQjIYggTrKikGFSDYyJdw">
+	    	"Juice" </a>
+	    	from her new album.
+	    	</p>
 		</div>
-		<div class="column">
+		<div class="column right">
 			<h3
 	    	style="color:white">
-	    	Top Pic:
+	    	Top Informational Video:
 	    	</h3>
+	    	<iframe
+	    	style="width: 560px; height: 315px; border: 0" 
+	    	src="https://www.youtube.com/embed/ntE50C4_Hzw"allowfullscreen>
+	    	</iframe>
+	    	<p class="center">
+	    		Learn how to make Cream of Mushroom Soup the correct way!
+	    	</p>
 		</div>
 	</div>
 
 	<div class="row center">
-		<div class="column">
+		<div class="column left">
 			<h3
 	    	style="color:white">
 	    	What I've Been Watching:
 	    	</h3>
+	    	<iframe
+	    	style="width: 560px; height: 315px; border: 0" 
+	    	src="https://www.youtube.com/embed/efD3nmwF-IM"allowfullscreen>
+	    	</iframe>
+	    	<p class="center">
+	    		I know that you all know I watch me some GOT. 
+	    		Here is a ~mostly~ spoiler free vid on if Game of Thrones were an anime.
+	    		V entertain.
+	    	</p>
 		</div>
-		<div class="column">
+		<div class="column right">
 			<h3
 	    	style="color:white">
-	    	Interesting Stuff:
+	    	Something Weird:
 	    	</h3>
+	    	<iframe
+	    	style="width: 560px; height: 315px; border: 0"
+	    	src="https://www.youtube.com/embed/u8drRfc69NA"allowfullscreen>
+	    	</iframe>
+	    	<p class="center">
+	    		For all of you who support the anti-war on Christmas, here is your little slice of Xmas in late April.
+	    	</p>
 		</div>
 	</div>
   </body>
