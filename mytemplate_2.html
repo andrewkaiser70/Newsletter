@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  	<style>
+  		*{
+  			box-sizing: border-box;
+  		}
+  		body{
+			background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/blackhole.png); 
+			background-repeat: no-repeat;
+  			background-size: cover;
+		}
+		div{
+			column-count: 2;
+			column-gap: 50px;
+			column-width: 500px;
+			white-space: nowrap;
+  			overflow: hidden;
+
+
+		}
+		/* Create three unequal columns that floats next to each other */
+		.column {
+		  float: left;
+		  width: 50%;
+		  padding: 15px;
+		}
+		 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 600px) {
+		  .column {
+		    width: 100%;
+		  }
+		} 
+		/* Clear floats after the columns */
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+
+  		.center {
+  				  position: static;
+				  display: block;
+				  margin-left: auto;
+				  margin-right: auto;
+				  width: 50%;
+				  text-align: center;
+				}
+		.image{
+				object-fit: contain;
+				z-index: -1;
+				}
+  	</style>
+
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Things I Saw On The Internet This Week</title>
+  </head>
+  <body>
+
+  	<a 
+    href="https://www.satanmusic.com/">
+    	<img
+    	class="image center"
+    	src="https://scontent.fagc1-1.fna.fbcdn.net/v/t1.0-9/22539909_10204153765361501_1722574992896795370_n.jpg?_nc_cat=110&_nc_ht=scontent.fagc1-1.fna&oh=aa17029011f7a12bb83f418f4caa525f&oe=5D2D31C6"
+    	alt="Kaiser"
+		width="50" 
+		height="100">
+	</a>
+
+    <h1 style="color:red;text-align:center;">
+    Things I Saw On The Internet This Week
+	</h1>
+
+	<p
+	class="center"
+	style="color:cyan;"
+	width="300"
+	height="300">
+		Often I find myself wandering around the internet and think, "Someone else should see this!" I started this project of sharing culture across the web so that I could share said culture with all of you, and perhaps some of it will rub off. 
+	</p>
+
+    <h2
+    class="center"
+    style="color:white">
+		The Best Thing I Saw This Week
+	</h2>
+
+	<iframe 
+		class="center" 
+		src="https://www.youtube.com/embed/fB40Nx95hFA"
+		style="width: 500px; height: 500px; border: 0">
+	</iframe>
+
+	<div class="row center">
+		<div class="column">
+			<h3
+	    	style="color:white">
+	    	Best Musical Thing:
+	    	</h3>
+		</div>
+		<div class="column">
+			<h3
+	    	style="color:white">
+	    	Top Pic:
+	    	</h3>
+		</div>
+	</div>
+
+	<div class="row center">
+		<div class="column">
+			<h3
+	    	style="color:white">
+	    	What I've Been Watching:
+	    	</h3>
+		</div>
+		<div class="column">
+			<h3
+	    	style="color:white">
+	    	Interesting Stuff:
+	    	</h3>
+		</div>
+	</div>
+  </body>
+</html>
