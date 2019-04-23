@@ -23,7 +23,7 @@
 		}
 		.column{
 			max-width: 600px
-			margin: 0px;
+			margin: 10px;
 			border: 10px
 			column-count: 2;
 			-webkit-column-gap: 10px;
@@ -42,8 +42,10 @@
 		}
 
 		 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-		@media screen and (max-width: 600px) {
+		@media screen and (max-width: 400px) {
 		  .column {
+		  	padding: 0;
+		    float: none;
 		    width: 100%;
 		  }
 		} 
@@ -100,7 +102,7 @@
 	<iframe 
 		class="center" 
 		src="https://www.youtube.com/embed/fB40Nx95hFA"
-		style="width: 500px; height: 500px; border: 0">
+		style="width: auto; height: auto; border: 0">
 	</iframe>
 
 	<div class="row center">
@@ -111,7 +113,7 @@
 	    	</h3>
 
 	    	<iframe
-	    	style="width: 560px; height: 315px; border: 0" 
+	    	style="width: auto; height: auto; border: 0" 
 	    	src="https://www.youtube.com/embed/_W0zqm5zMdc"
 	    	allowfullscreen>
 	    	</iframe>
@@ -132,7 +134,7 @@
 	    	Top Informational Video:
 	    	</h3>
 	    	<iframe
-	    	style="width: 560px; height: 315px; border: 0" 
+	    	style="width: auto; height: auto; border: 0" 
 	    	src="https://www.youtube.com/embed/ntE50C4_Hzw"allowfullscreen>
 	    	</iframe>
 	    	<p class="center">
@@ -148,7 +150,7 @@
 	    	What I've Been Watching:
 	    	</h3>
 	    	<iframe
-	    	style="width: 560px; height: 315px; border: 0" 
+	    	style="width: auto; height: auto; border: 0" 
 	    	src="https://www.youtube.com/embed/efD3nmwF-IM"allowfullscreen>
 	    	</iframe>
 	    	<p class="center">
@@ -163,7 +165,7 @@
 	    	Something Weird:
 	    	</h3>
 	    	<iframe
-	    	style="width: 560px; height: 315px; border: 0"
+	    	style="width: auto; height: auto; border: 0"
 	    	src="https://www.youtube.com/embed/u8drRfc69NA"allowfullscreen>
 	    	</iframe>
 	    	<p class="center">
