@@ -13,60 +13,60 @@
   			background-position: center;
 		}
 		iframe{
-		  max-width: 100%;
-		  height: auto;
+		  height: 300px;
+		  width: 500px;
+		  border: 0;
+		  object-fit: contain;
 		}
 		p{
 			color:cyan; 
-			width: 50%; 
-			height: 100px;
+			width: 500px; 
+			height: auto;
+			-webkit-column-break-inside: avoid;
+          	page-break-inside: avoid;
+            break-inside: avoid;
 		}
 		.column{
 			max-width: 600px
-			margin: 10px;
+			margin: auto;
 			border: 10px
+
+			-moz-column-count: 2;
+			-webkit-column-count: 2;
 			column-count: 2;
+
 			-webkit-column-gap: 10px;
      		-moz-column-gap: 10px;
           	column-gap: 10px;
+
+          	-webkit-column-width: 500px;
+     		-moz-column-width: 500px;
+          	column-width: 500px;
+
 			white-space: wrap;
-  			overflow: hidden;
-		}
-		.column.left {
-			float: left;
-			width: 50%;
-		}
-		.column.right {
-			float: right;
-			width: 50%;
 		}
 
-		 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-		@media screen and (max-width: 400px) {
-		  .column {
-		  	padding: 0;
-		    float: none;
-		    width: 100%;
-		  }
-		} 
-		/* Clear floats after the columns */
-		.row:after {
-		  content: "";
-		  display: table;
-		  clear: both;
+		@media only screen and (max-width: 520px){
+			iframe{
+			  height: 300px;
+			  width: 100%;
+			  border: 0;
+			}
+			p{
+				width: 100%; 
+				height: auto;
+			}
 		}
-
   		.center {
-  				  position: static;
-				  display: block;
-				  margin-left: auto;
-				  margin-right: auto;
-				  text-align: center;
-				}
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
 		.image{
-				object-fit: contain;
-				z-index: -1;
-				}
+			object-fit: contain;
+			z-index: -1;
+		}
   	</style>
 
     <meta charset="utf-8">
@@ -101,77 +101,66 @@
 
 	<iframe 
 		class="center" 
-		src="https://www.youtube.com/embed/fB40Nx95hFA"
-		style="width: auto; height: auto; border: 0">
+		src="https://www.youtube.com/embed/fB40Nx95hFA">
 	</iframe>
 
-	<div class="row center">
-		<div class="column left">
-			<h3
-	    	style="color:white">
-	    	Best Musical Thing:
-	    	</h3>
+	<div class="column center">
+		<h3
+    	style="color:white">
+    	Best Musical Thing:
+    	</h3>
+    	<iframe
+    	src="https://www.youtube.com/embed/_W0zqm5zMdc"
+    	allowfullscreen>
+    	</iframe>
+    	<p class="center">
+    	I have been listening to Lizzo for awhile now, and she is superb. This is just a little parody of Anchorman that I got from the Pitchfork article on 
+    	<a href="https://pitchfork.com/thepitch/lizzos-10-best-flute-videos/"> 
+    	her top 10 flute videos </a>.
+    	If you have not listened to her before, I definitely recommend listening to 
+    	<a href="https://open.spotify.com/track/0k664IuFwVP557Gnx7RhIl?si=oeQjIYggTrKikGFSDYyJdw">
+    	"Juice" </a>
+    	from her new album.
+    	</p>
 
-	    	<iframe
-	    	style="width: auto; height: auto; border: 0" 
-	    	src="https://www.youtube.com/embed/_W0zqm5zMdc"
-	    	allowfullscreen>
-	    	</iframe>
+		<h3
+    	style="color:white">
+    	Top Informational Video:
+    	</h3>
+    	<iframe
+    	src="https://www.youtube.com/embed/ntE50C4_Hzw"allowfullscreen>
+    	</iframe>
+    	<p class="center">
+    		Learn how to make Cream of Mushroom Soup the correct way!
+    	</p>
 
-	    	<p class="center">
-	    	I have been listening to Lizzo for awhile now, and she is superb. This is just a little parody of Anchorman that I got from the Pitchfork article on 
-	    	<a href="https://pitchfork.com/thepitch/lizzos-10-best-flute-videos/"> 
-	    	her top 10 flute videos </a>.
-	    	If you have not listened to her before, I definitely recommend listening to 
-	    	<a href="https://open.spotify.com/track/0k664IuFwVP557Gnx7RhIl?si=oeQjIYggTrKikGFSDYyJdw">
-	    	"Juice" </a>
-	    	from her new album.
-	    	</p>
-		</div>
-		<div class="column right">
-			<h3
-	    	style="color:white">
-	    	Top Informational Video:
-	    	</h3>
-	    	<iframe
-	    	style="width: auto; height: auto; border: 0" 
-	    	src="https://www.youtube.com/embed/ntE50C4_Hzw"allowfullscreen>
-	    	</iframe>
-	    	<p class="center">
-	    		Learn how to make Cream of Mushroom Soup the correct way!
-	    	</p>
-		</div>
+    	<br>
+
+		<h3
+    	style="color:white">
+    	What I've Been Watching:
+    	</h3>
+    	<iframe 
+    	src="https://www.youtube.com/embed/efD3nmwF-IM"allowfullscreen>
+    	</iframe>
+    	<p class="center">
+    		I know that you all know I watch me some GOT. 
+    		Here is a ~mostly~ spoiler free vid on if Game of Thrones were an anime.
+    		V entertain.
+    	</p>
+
+		<h3
+    	style="color:white">
+    	Something Weird:
+    	</h3>
+    	<iframe
+    	src="https://www.youtube.com/embed/u8drRfc69NA"allowfullscreen>
+    	</iframe>
+    	<p class="center">
+    		For all of you who support the anti-war on Christmas, here is your little slice of Xmas in late April.
+    	</p>
+
 	</div>
 
-	<div class="row center">
-		<div class="column left">
-			<h3
-	    	style="color:white">
-	    	What I've Been Watching:
-	    	</h3>
-	    	<iframe
-	    	style="width: auto; height: auto; border: 0" 
-	    	src="https://www.youtube.com/embed/efD3nmwF-IM"allowfullscreen>
-	    	</iframe>
-	    	<p class="center">
-	    		I know that you all know I watch me some GOT. 
-	    		Here is a ~mostly~ spoiler free vid on if Game of Thrones were an anime.
-	    		V entertain.
-	    	</p>
-		</div>
-		<div class="column right">
-			<h3
-	    	style="color:white">
-	    	Something Weird:
-	    	</h3>
-	    	<iframe
-	    	style="width: auto; height: auto; border: 0"
-	    	src="https://www.youtube.com/embed/u8drRfc69NA"allowfullscreen>
-	    	</iframe>
-	    	<p class="center">
-	    		For all of you who support the anti-war on Christmas, here is your little slice of Xmas in late April.
-	    	</p>
-		</div>
-	</div>
   </body>
 </html>
